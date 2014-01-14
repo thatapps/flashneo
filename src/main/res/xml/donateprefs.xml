@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/donateTitle">
+
+        <!--<Preference-->
+        <!--android:title="@string/appoftheday"-->
+        <!--android:summary="@string/appofthedaysum"-->
+        <!--android:key="appoftheday"/>-->
+        <!--<Preference-->
+        <!--android:title="@string/startapp"-->
+        <!--android:summary="@string/startappsum"-->
+        <!--android:key="startapp"/>-->
+
+        <Preference
+            android:title="@string/adColony"
+            android:summary="@string/adColonysum"
+            android:key="adcolony"/>
+        <Preference
+            android:title="@string/adMob"
+            android:summary="@string/adMobsum"
+            android:key="adMob"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/donateTitleCard">
+    <Preference
+            android:title="@string/paypal_donate"
+            android:summary="@string/paypal_donate_sum"
+            android:key="paypal"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
