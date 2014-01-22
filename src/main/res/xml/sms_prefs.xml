@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/sms_mode_categ">
+    <PreferenceCategory android:title="@string/sms_mode_categ"
+        
+        
+        >
         <ListPreference
                 android:key="sms_mode_list"
                 android:title="@string/smsModeList"
@@ -10,16 +13,18 @@
                 android:defaultValue="1"
                 />
 
-        <com.spirosbond.callerflashlight.SeekBarPreference
+        <com.proapps.callflashlight.SeekBarPreference
                 android:key="msgFlashDuration"
                 android:title="@string/smsModeListValue"
                 android:summary="@string/smsModeListValueSum"
                 android:defaultValue="3"
                 android:max="10">
 
-        </com.spirosbond.callerflashlight.SeekBarPreference>
+        </com.proapps.callflashlight.SeekBarPreference>
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/sms_more_categ">
+    <PreferenceCategory android:title="@string/sms_more_categ"
+       
+        >
         <Preference
                 android:key="app_list_check"
                 android:title="@string/app_list_check"
@@ -30,7 +35,7 @@
                 android:key="app_list"
                 android:title="@string/app_list_tittle"
                 android:summary="@string/app_list_sum"
-
+				android:enabled="false"
                 />
 
     </PreferenceCategory>
