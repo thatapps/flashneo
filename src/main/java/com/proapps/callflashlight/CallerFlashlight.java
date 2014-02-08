@@ -30,7 +30,7 @@ public class CallerFlashlight extends Application implements SharedPreferences.O
         public static final int TYPE_NORMAL = 1;
         public static final int TYPE_ALTERNATIVE = 2;
         public static final int TYPE_ALTERNATIVE_2 = 3;
-        private static final String packages = "com.viber.voip,com.skype.raider,com.google.android.talk,com.google.android.gm,com.facebook.katana,com.whatsapp,com.google.android.apps.plus,mikado.bizcalpro,netgenius.bizcal,com.ryosoftware.contactdatesnotifier,com.twitter.android,com.fsck.k9,com.onegravity.k10.pro2,com.google.android.apps.plus,de.gmx.mobile.android.mail,com.quoord.tapatalkHD,com.quoord.tapatalkpro.activity,com.android.deskclock,com.android.alarmclock,com.sec.android.app.clockpackage,com.facebook.orca,com.joelapenna.foursquared,com.snapchat.android,com.instagram.android,com.handcent.nextsms,kik.android,jp.naver.line.android,com.imo.android.imoim,de.shapeservices.impluslite,de.shapeservices.implusfull,com.bbm,com.gvoip,com.snrblabs.grooveip,com.google.android.apps.googlevoice,com.sonyericsson.alarm.ALARM_ALERT,com.htc.android.worldclock.ALARM_ALERT,com.sonyericsson.organizer,com.lge.alarm.alarmclocknew,com.samsung.sec.android.clockpackage.alarm.ALARM_ALERT,zte.com.cn.alarmclock.ALARM_ALERT,com.motorola.blur.alarmclock.ALARM_ALERT,com.samsung.sec.android.clockpackage.alarm.ALARM_ALERT,com.jb.gosms,com.moplus.gvphone,com.skymobius.vtok,com.klinker.android.evolve_sms";
+        private static final String packages = "com.viber.voip,co.skype.raider,com.google.adroid.alk,co.google.anroid.gm,com.faceook.katana,comhatsapp,com.goglandroid.apps.plus,mkado.bizcalro,neteius.bizcal,com.rysoftware.contactdatesnotifier,om.twitte.android,com.fsck9,com.onegrvity.k10.pro2,comgooge.androd.ap.pls,de.gmx.mobile.android.mail,com.quoord.tapatalkHD,com.quood.tapatalkpro.activity,com.android.deskclck,com.android.alarmclck,com.sec.anroid.app.lockpackae,comfacebook.orca,comjoelaenna.foursquared,co.snapchat.android,com.instagram.android,cm.handcent.nextsms,kik.android,jp.naver.line.android,com.imo.android.imoim,de.shapeservices.impluslite,de.shapeservices.implusfull,com.bbm,com.gvoip,com.snrblabs.grooveip,com.goole.android.aps.googlevoice,com.sonyricsson.alarm.ALARM_ALERT,com.htc.android.worldclock.ALARM_ALERT,com.soyericsson.orgaizer,com.ge.alarm.alarmclocnew,com.samsung.sec.android.clockpackage.alarm.ALARM_ALERT,zte.com.cn.alarmclock.ALARM_ALERT,com.motorola.blur.alarmclock.ALARM_ALET,com.samsug.sec.androd.clockpacage.alarm.ALARM_ALERT,com.jb.gosms,com.moplus.gvphone,com.skymobius.vtok,com.klinker.android.evolvesms";
         private static final String TAG = CallerFlashlight.class.getSimpleName();
         public static Runnable commit;
         private boolean callFlash = false, msgFlash = false, callFlashTest = false, msgFlashTest = false;
@@ -115,11 +115,11 @@ public class CallerFlashlight extends Application implements SharedPreferences.O
 
                 callFlash = prefs.getBoolean("callFlash", false);
                 msgFlash = prefs.getBoolean("msgFlash", false);
-                callFlashOnDuration = prefs.getInt("callFlashOnDuration", 200);
+                callFlashOnDuration = prefs.getInt("callFlashOnDuration", 150);
                 callFlashOffDuration = prefs.getInt("callFlashOffDuration", 250);
-                msgFlashOnDuration = prefs.getInt("msgFlashOnDuration", 200);
+                msgFlashOnDuration = prefs.getInt("msgFlashOnDuration", 150);
                 msgFlashOffDuration = prefs.getInt("msgFlashOffDuration", 250);
-                msgFlashDuration = prefs.getInt("msgFlashDuration", 3);
+                msgFlashDuration = prefs.getInt("msgFlashDuration", 4);
                 silentMode = prefs.getBoolean("silent_mode", true);
                 vibrateMode = prefs.getBoolean("vibrate_mode", true);
                 normalMode = prefs.getBoolean("normal_mode", true);

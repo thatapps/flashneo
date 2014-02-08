@@ -52,7 +52,7 @@ public class AppList extends Activity implements AdapterView.OnItemClickListener
 		Button selectAll = (Button) findViewById(R.id.selectall_button);
 		selectAll.setOnClickListener(this);
 		lv = (ListView) findViewById(R.id.appList);
-		//		this.adapter = new InteractiveArrayAdapter(this, activities);
+				this.adapter = new InteractiveArrayAdapter(this, activities);
 		lv.setOnItemClickListener(this);
 		lv.setAdapter(adapter);
 		packageManager = getPackageManager();
@@ -100,7 +100,7 @@ public class AppList extends Activity implements AdapterView.OnItemClickListener
 		}
 		Model temp;
 		for (ApplicationInfo packageInfo : packages) {
-			//			if(CallerFlashlight.LOG) Log.d(TAG, "Installed package :" + packageInfo.packageName);
+						if(CallerFlashlight.LOG) Log.d(TAG, "Installed package :" + packageInfo.packageName);
 			if (names.contains(packageInfo.packageName) || !callerFlashlight.isInPackages(packageInfo.packageName)) {
 				continue;
 			}
